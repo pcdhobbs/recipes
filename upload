@@ -1,0 +1,16 @@
+pushd ~/pcdh
+echo Main pcdh repo
+echo local
+git push ~/pcdh/bare/recipes.git
+echo Sigr
+git push ssh://pcdh@eoideas.com:17722/volume1/share/pcdh/bare/recipes.git
+echo Ortho
+git push ssh://pcdh@palaeologus.com:24022/home/pcdh/pcdh/bare/recipes.git
+echo DrWatson
+git push ssh://pcdh@palaeologus.com:12322/home/pcdh/pcdh/bare/recipes.git
+echo gitlab
+git push git@gitlab.com:pcdhobbs/recipes.git master
+echo github
+git push git@github.com:pcdhobbs/recipes.git master
+popd
+
